@@ -23,7 +23,6 @@
   box-shadow: rgba(12, 136, 230, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   overflow: hidden;
-  position: fixed;
   top: 0;
   margin-left: -5px;
   width: 100%;

@@ -15,23 +15,23 @@ export default function Home() {
       },
       body: JSON.stringify(data)
     })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-      window.location.href = '/play';
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+        window.location.href = '/play';
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
   }
 
   return (
     <form onSubmit={handleSubmit}>
-      <FormControl isRequired w ='50%' m={'auto'}>
+      <FormControl isRequired w='50%' m={'auto'}>
         <FormLabel>Name</FormLabel>
         <Input type="text" value={name} onChange={(event) => setName(event.target.value)} />
       </FormControl>
-      <FormControl isRequired mt={4} w ='50%' m={'auto'}>
+      <FormControl isRequired mt={4} w='50%' m={'auto'}>
         <FormLabel>Difficulty level</FormLabel>
         <Select value={difficulty} onChange={(event) => setDifficulty(event.target.value)}>
           <option value="">Select a difficulty level</option>
@@ -40,7 +40,7 @@ export default function Home() {
           <option value="hard">Hard</option>
         </Select>
       </FormControl>
-      <Button w ='50%' ml={340} bg={'blue.700'} fontSize='2xl' color={'whiteAlpha.800'} type="submit" mt={4}>Submit</Button>
+      <Button w='50%' ml={340} bg={'blue.700'} fontSize='2xl' color={'whiteAlpha.800'} type="submit" mt={4}>Submit</Button>
     </form>
   );
 }
